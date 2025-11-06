@@ -1,0 +1,9 @@
+ssh -i your-key.pem ec2-user@<EC2_PUBLIC_IP>
+sudo apt update -y
+sudo apt install -y nodejs npm git
+git clone https://github.com/<your-username>/<your-repo>.git
+cd backend
+npm install
+npm start
+curl http://localhost:5000
+{ "message": "Backend running successfully!" }
